@@ -1,4 +1,4 @@
-# National Bank of Kyrgyzstan API adapter for exchange gem
+# National Bank of Kyrgyzstan API adapter for [exchange gem](https://github.com/beatrichartz/exchange)
 
 ## Installation
 

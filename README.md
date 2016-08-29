@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Setup exchange to use NBKR(National Bank of Kyrgyzstan) currency rates provider.
+
+```ruby
+Exchange.configuration = Exchange::Configuration.new do |c|
+  c.api.subclass = :nbkr
+end
+```
+
+Test if it works.
+
+```ruby
+100.in(:kgs).to(:usd).to_f
+```
 
 ## Development
 

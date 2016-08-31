@@ -1,4 +1,6 @@
-# National Bank of Kyrgyzstan API adapter for [exchange gem](https://github.com/beatrichartz/exchange)
+# [National Bank of Kyrgyzstan](http://nbkr.kg) API adapter for [exchange gem](https://github.com/beatrichartz/exchange)
+
+It also has [valuta.kg](http://valuta.kg) fallback adapter.
 
 ## Installation
 
@@ -22,7 +24,7 @@ Setup exchange to use NBKR(National Bank of Kyrgyzstan) currency rates provider.
 
 ```ruby
 Exchange.configuration = Exchange::Configuration.new do |c|
-  c.api.subclass = :nbkr
+  c.api.subclass = :nbkr # or :valuta_kg
 end
 ```
 
